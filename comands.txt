@@ -1,0 +1,44 @@
+git config --global user.name "Stefani Najdoska"
+git config --global user.email "stefani_najdoska@live.com"
+git config --global color.ui true
+mkdir lab1 - da se kreira direktorium lab 1
+cd lab1 -vleze u nego
+git init - se kreira prazno repozitori
+nano l1.txt
+git add . -site fajlovi se dodavaat na repozitorigitt 
+git commit -m "Initial commit"
+git status
+nano l1.txt - da ja otvoram 
+git add . 
+git commit -m "Modify l1.txt" -komitira
+pravam na github racno repozitori
+git clone https://github.com/Stefanii/labProba.git origin
+	go povrzuvam mojot lokalen repozitorium so GitHub repo i go imenuvam vo 
+origin
+
+/se pravi push na lokalniot repo origin no prvo mu se stavaat remote add origin
+git remote add origin https://github.com/Stefanii/labProba.git 
+git push -u origin master
+
+git log // se gledaat site komiti shto se napraveno
+git checkout 'ime na toj komit shto sakame' se stava da bide posleden komit
+git checkout da76bcf8ea3e984d45e251ae3f4658a18965537b
+
+git checkout -b logging kreirame nov branch i direktno se prefrlame na nego
+git log > log.txt izlezeot od komandata 'git log' se zapishuva vo tekstualna 
+datotekka log.txt
+
+git add . go dodavame fajlot log.txt
+git commit -m "komit nov logging"
+git push -u origin logging gi kachuvame site fajlovi na branch logging
+
+git checkout master se menuvame na glaven branch
+git merge logging go spojuvame logging so master
+git pull origin master pravime sinhronizacija
+
+git branch gi dava site branchovi
+
+
+
+
+
